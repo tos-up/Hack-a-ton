@@ -1,12 +1,8 @@
 <template>
   <v-app dark>
-    <v-main>
-      <v-container fluid>
-        <v-layout>
-          <Nuxt />
-        </v-layout>
-      </v-container>
-    </v-main>
+    <NavBar />
+
+    <Nuxt />
 
     <v-footer :absolute="true" app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
@@ -15,10 +11,12 @@
 </template>
 
 <script>
+import NavBar from '~/components/NavBar.vue'
 export default {
   name: 'DefaultLayout',
   data() {
     return {}
   },
+  components: { NavBar },
 }
 </script>
