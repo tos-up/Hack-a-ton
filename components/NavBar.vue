@@ -1,14 +1,14 @@
 <template>
   <div>
-    <!-- <v-navigation-drawer v-model="drawer" fixed app>
+    <v-navigation-drawer
+      v-model="drawer"
+      fixed
+      app
+      temporary
+      class="hidden-md-and-up"
+    >
       <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-        >
+        <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" exact>
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
@@ -17,16 +17,28 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
-    </v-navigation-drawer> -->
+    </v-navigation-drawer>
+
     <v-app-bar fixed app>
-      <!-- <v-app-bar-nav-icon @click.stop="drawer = !drawer" /> -->
+      <v-app-bar-nav-icon
+        class="hidden-md-and-up"
+        @click.stop="drawer = !drawer"
+      />
       <v-toolbar-title>
-        <v-btn text href="#top" style="font-size: 20px">Kisa_Hackathon</v-btn>
+        <v-btn text href="#top" style="font-size: 1.25rem"
+          >Kisa_Hackathon</v-btn
+        >
       </v-toolbar-title>
       <v-spacer />
-      <v-btn text href="#about">About</v-btn>
-      <v-btn text href="#submit">Submit</v-btn>
-      <v-btn text href="#contact">Contact</v-btn>
+      <v-btn
+        class="hidden-sm-and-down"
+        text
+        v-for="(item, i) in items"
+        :key="i"
+        :href="item.to"
+        exact
+        >{{ item.title }}</v-btn
+      >
     </v-app-bar>
   </div>
 </template>
@@ -39,13 +51,18 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/',
+          title: 'About',
+          to: '#about',
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire',
+          title: 'Submit',
+          to: '#submit',
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'contact',
+          to: '#contact',
         },
       ],
       title: 'Kisa_Hackathon',

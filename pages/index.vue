@@ -1,5 +1,6 @@
 <template>
   <v-main>
+    <NavBar />
     <Home />
   </v-main>
 </template>

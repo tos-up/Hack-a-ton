@@ -3,9 +3,15 @@
     <v-container fill-height class="home-submit__content">
       <h1 class="home-title">Contests</h1>
       <v-row>
-        <v-col v-for="contest in contests" :key="contest.title" cols="3">
-          <v-card class="mx-auto" max-width="30vw">
-            <v-card-title> {{ contest.title }} </v-card-title>
+        <v-col
+          v-for="contest in contests"
+          :key="contest.title"
+          md="4"
+          sm="6"
+          xs="12"
+        >
+          <v-card class="mx-auto">
+            <v-card-title style="100vw"> {{ contest.title }} </v-card-title>
             <v-card-text>
               {{ contest.openTime }} - {{ contest.closeTime }}</v-card-text
             >
