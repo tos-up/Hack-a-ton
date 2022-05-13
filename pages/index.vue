@@ -14,8 +14,8 @@ export default {
   name: 'IndexPage',
   components: {
     NavBar,
-    Home 
-    },
+    Home,
+  },
 }
 </script>
 
@@ -24,5 +24,14 @@ export default {
   display: block;
   text-align: start;
   position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 2px;
 }
 </style>
