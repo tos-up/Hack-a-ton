@@ -31,13 +31,13 @@ export default {}
   &-title {
     color: white;
     text-align: left;
-    font-size: clamp(1.375rem, 2vw + 1rem, 3.125rem);
+    font-size: clamp(1.375rem, 2vw + 1rem, 2.938rem);
     // font-weight: bold;
   }
   &-text {
     color: white;
     text-align: left;
-    font-size: clamp(0.938rem, 2vw + 1rem, 1.75rem);
+    font-size: clamp(0.938rem, 2vw + 1rem, 1.55rem);
     white-space: nowrap;
   }
 }
