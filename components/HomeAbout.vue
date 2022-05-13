@@ -25,13 +25,13 @@ export default {}
 
 <style lang="scss" scoped >
 .home-about__content {
-  width: 100%;
+  width: 100vw;
   min-height: 50vh;
 
   &-title {
     color: white;
     text-align: left;
-    font-size: clamp(1.5rem, 2vw + 1rem, 3.125rem);
+    font-size: clamp(1.375rem, 2vw + 1rem, 3.125rem);
     // font-weight: bold;
   }
   &-text {
