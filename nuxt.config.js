@@ -6,7 +6,7 @@ export default {
     titleTemplate: '%s - kisa-hackathon',
     title: 'kisa-hackathon',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'ja',
     },
     meta: [
       { charset: 'utf-8' },
