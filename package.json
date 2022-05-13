@@ -12,7 +12,7 @@
     "lintfix": "prettier --write --list-different ."
   },
   "dependencies": {
-    "@nuxtjs/now-builder": "^0.17.3",
+    "@nuxtjs/vercel-builder": "^0.22.1",
     "core-js": "^3.19.3",
     "nuxt": "^2.15.8",
     "vue": "^2.6.14",
