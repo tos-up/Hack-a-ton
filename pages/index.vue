@@ -1,15 +1,21 @@
 <template>
-  <v-layout> </v-layout>
+  <v-main>
+    <Home />
+  </v-main>
 </template>
 
 <script>
 import NavBar from '~/components/NavBar.vue'
+import Home from '~/components/Home.vue'
 export default {
   data() {
     return {}
   },
   name: 'IndexPage',
-  components: { NavBar },
+  components: {
+    NavBar,
+    Home 
+    },
 }
 </script>
 
