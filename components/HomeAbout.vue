@@ -26,18 +26,18 @@ export default {}
 <style lang="scss" scoped >
 .home-about__content {
   width: 100%;
-  height: 30vh;
+  min-height: 50vh;
 
   &-title {
     color: white;
     text-align: left;
-    font-size: 50px;
+    font-size: clamp(1.5rem, 2vw + 1rem, 3.125rem);
     // font-weight: bold;
   }
   &-text {
     color: white;
     text-align: left;
-    font-size: 28px;
+    font-size: clamp(0.938rem, 2vw + 1rem, 1.75rem);
     white-space: nowrap;
   }
 }

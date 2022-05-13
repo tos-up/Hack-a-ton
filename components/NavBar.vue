@@ -21,7 +21,7 @@
     <v-app-bar fixed app>
       <!-- <v-app-bar-nav-icon @click.stop="drawer = !drawer" /> -->
       <v-toolbar-title>
-        <v-btn text href="#top" style="font-size: 20px">Kisa_Hackathon</v-btn>
+        <v-btn text href="#top" style="font-size: 1vw">Kisa_Hackathon</v-btn>
       </v-toolbar-title>
       <v-spacer />
       <v-btn text href="#about">About</v-btn>
