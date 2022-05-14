@@ -1,7 +1,5 @@
 <template>
   <v-app dark>
-    <NavBar />
-
     <Nuxt />
 
     <v-footer :absolute="true" app>
