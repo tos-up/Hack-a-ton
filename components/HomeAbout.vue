@@ -37,7 +37,7 @@ export default {}
   &-text {
     color: white;
     text-align: left;
-    font-size: clamp(0.938rem, 1vw + 1rem, 1.5rem);
+    font-size: clamp(0.938rem, 0.9vw + 1rem, 1.5rem);
     white-space: nowrap;
   }
 }
