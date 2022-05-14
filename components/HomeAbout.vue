@@ -25,7 +25,7 @@ export default {}
 
 <style lang="scss" scoped >
 .home-about__content {
-  width: 100vw;
+  width: 90vw;
   min-height: 50vh;
 
   &-title {
@@ -37,7 +37,7 @@ export default {}
   &-text {
     color: white;
     text-align: left;
-    font-size: clamp(0.938rem, 2vw + 1rem, 1.55rem);
+    font-size: clamp(0.938rem, 1vw + 1rem, 1.5rem);
     white-space: nowrap;
   }
 }
