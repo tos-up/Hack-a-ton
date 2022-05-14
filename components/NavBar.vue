@@ -25,7 +25,9 @@
         @click.stop="drawer = !drawer"
       />
       <v-toolbar-title>
-        <v-btn text href="#top" style="font-size: 1vw">Kisa_Hackathon</v-btn>
+        <v-btn text href="#top" style="font-size: 1.25rem"
+          >Kisa_Hackathon</v-btn
+        >
       </v-toolbar-title>
       <v-spacer />
       <v-btn
