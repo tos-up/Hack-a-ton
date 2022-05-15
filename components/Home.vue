@@ -11,10 +11,10 @@
 </template>
 
 <script>
-import HomeHero from './HomeHero.vue'
-import HomeAbout from './HomeAbout.vue'
-import HomeSubmit from './HomeSubmit.vue'
-import HomeContact from './HomeContact.vue'
+import HomeHero from './HomeComponents/HomeHero.vue'
+import HomeAbout from './HomeComponents/HomeAbout.vue'
+import HomeSubmit from './HomeComponents/HomeSubmit.vue'
+import HomeContact from './HomeComponents/HomeContact.vue'
 
 export default {
   components: {

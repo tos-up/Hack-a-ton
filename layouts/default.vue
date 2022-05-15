@@ -1,7 +1,6 @@
 <template>
   <v-app dark>
     <Nuxt />
-
     <v-footer :absolute="true" app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
@@ -19,3 +18,14 @@ export default {
   components: { NavBar },
 }
 </script>
+
+<style lang="scss">
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 2px;
+}
+</style>

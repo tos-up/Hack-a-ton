@@ -5,10 +5,12 @@
       <v-row>
         <v-col>
           <v-card md="4" sm="6" xs="12">
-            <v-card-title>木更津 太郎</v-card-title>
+            <v-card-title>鳩 太郎</v-card-title>
             <v-card-text
               >Twitter:
-              <a href="https://twitter.com/hogehoge">@hogehoge</a></v-card-text
+              <a href="https://twitter.com/examplehogehoge"
+                >@examplehogehoge</a
+              ></v-card-text
             >
           </v-card>
         </v-col>

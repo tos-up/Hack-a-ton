@@ -25,9 +25,7 @@
         @click.stop="drawer = !drawer"
       />
       <v-toolbar-title>
-        <v-btn text href="#top" style="font-size: 1.25rem"
-          >Kisa_Hackathon</v-btn
-        >
+        <v-btn text href="/#top" style="font-size: 1.25rem">Hack-a-ton</v-btn>
       </v-toolbar-title>
       <v-spacer />
       <v-btn
@@ -52,20 +50,20 @@ export default {
         {
           icon: 'mdi-apps',
           title: 'About',
-          to: '#about',
+          to: '/#about',
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-send',
           title: 'Submit',
-          to: '#submit',
+          to: '/#submit',
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-contacts',
           title: 'contact',
-          to: '#contact',
+          to: '/#contact',
         },
       ],
-      title: 'Kisa_Hackathon',
+      title: 'Hack a ton',
     }
   },
 }

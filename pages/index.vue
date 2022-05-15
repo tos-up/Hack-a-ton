@@ -26,13 +26,4 @@ export default {
   text-align: start;
   position: relative;
 }
-
-::-webkit-scrollbar {
-  width: 4px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #aaa;
-  border-radius: 2px;
-}
 </style>

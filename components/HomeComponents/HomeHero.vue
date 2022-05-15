@@ -7,7 +7,7 @@
     >
       <v-row>
         <v-col class="home-hero__content-text float__content">
-          <h1>Kisa_Hackathon</h1>
+          <h1>Hack A Ton.</h1>
         </v-col>
       </v-row>
     </v-container>

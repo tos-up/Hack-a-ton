@@ -3,8 +3,8 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - kisa-hackathon',
-    title: 'kisa-hackathon',
+    titleTemplate: '%s - はっかそん',
+    title: 'はっかそん',
     htmlAttrs: {
       lang: 'ja',
     },
@@ -33,7 +33,26 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: [
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyBYVdVxNDfqPVbGKP6gBv0kO4v14UPQGSI',
+          authDomain: 'hack-a-ton-d00b2.firebaseapp.com',
+          projectId: 'hack-a-ton-d00b2',
+          storageBucket: 'hack-a-ton-d00b2.appspot.com',
+          messagingSenderId: '66365184687',
+          appId: '1:66365184687:web:e0b31959a89210e25d125a',
+        },
+        services: {
+          auth: true,
+          firestore: true,
+          storage: true,
+        },
+      },
+    ],
+  ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
@@ -56,4 +75,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  generate: {
+    fallback: true,
+  },
 }

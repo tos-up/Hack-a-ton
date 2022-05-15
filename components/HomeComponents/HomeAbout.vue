@@ -4,12 +4,12 @@
       <v-row>
         <v-col class="home-about__content-title">
           <h1>What is</h1>
-          <h1>Kisa_Hackathon?</h1>
+          <h1>Hack A Ton?</h1>
         </v-col>
         <v-spacer></v-spacer>
         <v-col class="home-about__content-text">
           <p>木更津高専の有志が開催する、</p>
-          <p>短期間集中型の開発コンテストです。</p>
+          <p>短期間集中型の開発コンテスト(Hackathon)です。</p>
           <!-- <p>実践することで身につく力を</p>
           <p>みんなに。</p> <-アホほどダサいので却下 -->
         </v-col>
