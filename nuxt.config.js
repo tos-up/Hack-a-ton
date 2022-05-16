@@ -21,7 +21,12 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    {
+      src: '~/plugins/firebase.js',
+      mode: 'client',
+    },
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -33,26 +38,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    [
-      '@nuxtjs/firebase',
-      {
-        config: {
-          apiKey: 'AIzaSyBYVdVxNDfqPVbGKP6gBv0kO4v14UPQGSI',
-          authDomain: 'hack-a-ton-d00b2.firebaseapp.com',
-          projectId: 'hack-a-ton-d00b2',
-          storageBucket: 'hack-a-ton-d00b2.appspot.com',
-          messagingSenderId: '66365184687',
-          appId: '1:66365184687:web:e0b31959a89210e25d125a',
-        },
-        services: {
-          auth: true,
-          firestore: true,
-          storage: true,
-        },
-      },
-    ],
-  ],
+  modules: [],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
