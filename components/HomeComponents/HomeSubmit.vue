@@ -15,6 +15,7 @@
             <v-card-text>
               {{ contest.openTime }} - {{ contest.closeTime }}</v-card-text
             >
+            <v-card-text> 参加条件: {{ contest.condition }}</v-card-text>
             <v-card-actions>
               <v-btn text @click="contest.isShowDetail = !contest.isShowDetail">
                 Detail</v-btn
@@ -24,7 +25,10 @@
             <v-expand-transition>
               <div v-show="contest.isShowDetail">
                 <v-divider></v-divider>
-                <v-card-text> {{ contest.detail }} </v-card-text>
+                <v-card-title>詳細情報</v-card-title>
+                <v-card-text v-for="detail in contest.details" :key="detail">{{
+                  detail
+                }}</v-card-text>
               </div>
             </v-expand-transition>
           </v-card>
@@ -41,17 +45,17 @@ export default {
       contests: [
         {
           title: '木更津高専Pre-Contest',
-          openTime: '2022-01-01',
-          closeTime: '2022-02-01',
-          detail: '第一回木更津高専クローズドハッカソン',
+          openTime: '2022-06-13',
+          closeTime: '2022-06-19',
+          subTitle: '第一回木更津高専クローズドハッカソン',
+          condition: '木更津高専 本科生',
           isShowDetail: false,
-        },
-        {
-          title: 'こんてすとのれい',
-          openTime: '2022-01-01',
-          closeTime: '2022-02-01',
-          detail: 'これはテストなだけ',
-          isShowDetail: false,
+          deadlineDate: '2022-06-11',
+          details: [
+            'キックオフ: 6月12日(日)',
+            '事前開発期間: 6月13日(月)-6月18日(土)',
+            '成果発表: 6月19日(日) 16:00-',
+          ],
         },
       ],
     }
