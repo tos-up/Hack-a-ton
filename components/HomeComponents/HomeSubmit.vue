@@ -20,7 +20,12 @@
               <v-btn text @click="contest.isShowDetail = !contest.isShowDetail">
                 Detail</v-btn
               >
-              <v-btn text> Join </v-btn>
+              <v-btn
+                text
+                href="https://docs.google.com/forms/d/e/1FAIpQLScw_19QK4w9qQ9KQB_AHOGJwFj0wA_HhhP-NRg82ANf8i_R_w/viewform"
+              >
+                Join
+              </v-btn>
             </v-card-actions>
             <v-expand-transition>
               <div v-show="contest.isShowDetail">
