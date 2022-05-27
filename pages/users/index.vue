@@ -1,21 +1,25 @@
- <template>
-  <v-main>
-    <NavBar />
-    <User />
-  </v-main>
+<template>
+    <v-main>
+      <v-container>
+        <v-row>
+          <v-col>
+            <UserSubmit />
+          </v-col>
+          <v-col>
+            <UserLogin />
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-main>
 </template>
- 
-<script>
-import NavBar from '~/components/NavBar.vue'
-import User from '~/components/User.vue'
 
+<script>
+import UserSubmit from '~/components/UserComponents/UserSubmit.vue';
 export default {
-  components: {
-    NavBar,
-    User,
-  },
+    components: { UserSubmit }
 }
 </script>
- 
- <style>
+
+<style>
+
 </style>
