@@ -3,10 +3,10 @@
     <v-container fill-height class="home-about__content">
       <v-row>
         <v-col class="home-about__content-title">
-          <h1>What is</h1>
-          <h1>Hack A Ton?</h1>
-        </v-col>
-        <v-spacer></v-spacer>
+          <h1>What is<br />Hack A Ton?</h1>
+        </v-col></v-row
+      >
+      <v-row>
         <v-col class="home-about__content-text">
           <p>木更津高専の有志が開催する、</p>
           <p>短期間集中型の開発コンテスト(Hackathon)です。</p>
@@ -32,13 +32,16 @@ export default {}
     color: white;
     text-align: left;
     font-size: clamp(1.375rem, 2vw + 1rem, 2.938rem);
+    white-space: nowrap;
     // font-weight: bold;
   }
   &-text {
+    flex-basis: auto;
     color: white;
     text-align: left;
     font-size: clamp(0.938rem, 0.9vw + 1rem, 1.5rem);
-    white-space: nowrap;
+    white-space: pre-line;
+    width: 100vw !important;
   }
 }
 </style>
