@@ -1,5 +1,6 @@
 <template>
   <section class="user">
+    <v-if></v-if>
     <UserSubmit />
   </section>
 </template>

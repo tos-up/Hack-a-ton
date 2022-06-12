@@ -1,25 +1,20 @@
 <template>
-    <v-main>
-      <v-container>
-        <v-row>
-          <v-col>
-            <UserSubmit />
-          </v-col>
-          <v-col>
-            <UserLogin />
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-main>
+  <v-main>
+    <NavBar />
+    <v-container> </v-container>
+  </v-main>
 </template>
 
 <script>
-import UserSubmit from '~/components/UserComponents/UserSubmit.vue';
+import UserSubmit from '~/components/UserComponents/UserSubmit.vue'
+import NavBar from '~/components/NavBar.vue'
+import { getAuth, onAuthStateChanged } from 'firebase/auth'
+
 export default {
-    components: { UserSubmit }
+  middleware: 'checkLogin',
+  components: { UserSubmit, NavBar },
 }
 </script>
 
 <style>
-
 </style>

@@ -4,37 +4,39 @@
       <v-row align="center" align-content="center">
         <v-col>
           <v-btn class="submitBtn">
-            <v-icon>mdi-google</v-icon><v-divider class="btnDivider"></v-divider>Sign Up with Google</v-btn>
-        </v-col>  
+            <v-icon>mdi-google</v-icon>Sign Up with Google</v-btn
+          >
+        </v-col>
       </v-row>
-       <v-row>
+      <v-row>
         <v-col>
-          <v-btn class="submitBtn"><v-icon>mdi-twitter</v-icon>Sign Up with Twitter</v-btn>
-        </v-col>  
+          <v-btn class="submitBtn"
+            ><v-icon>mdi-twitter</v-icon>Sign Up with Twitter</v-btn
+          >
+        </v-col>
       </v-row>
-       <v-row>
+      <v-row>
         <v-col>
-          <v-btn class="submitBtn"><v-icon>mdi-github</v-icon>Sign Up with GitHub</v-btn>
-        </v-col>  
+          <v-btn class="submitBtn"
+            ><v-icon>mdi-github</v-icon>Sign Up with GitHub</v-btn
+          >
+        </v-col>
       </v-row>
-       <v-row>
+      <v-row>
         <v-col>
-          <v-btn class="submitBtn"><v-icon>mdi-email</v-icon>Sign Up with E-mail</v-btn>
-        </v-col>  
+          <v-btn class="submitBtn"
+            ><v-icon>mdi-email</v-icon>Sign Up with E-mail</v-btn
+          >
+        </v-col>
       </v-row>
     </v-container>
   </section>
 </template>
 
 <style>
-.submitBtn{
+.submitBtn {
   width: 25vw;
   height: 8vh;
-}
-
-.btnDivider{
-  width: 10%;
-  padding: 10px;
 }
 </style>
 
